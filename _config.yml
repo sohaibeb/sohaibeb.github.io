@@ -16,9 +16,9 @@ minima:
     github:  sohaibeb
 
     # Mastodon instances
-    # mastodon:
-    # - username: sohaib
-    #   instance: mastodon.social
+     mastodon:
+     - username: sohaib
+       instance: mastodon.social
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
