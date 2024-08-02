@@ -31,29 +31,21 @@ img.capi {
   <div><p id="tempo"></p></div>
   <div class="shadow"><img class="capi" src="https://i1.sndcdn.com/artworks-x7HtlEJz2ip6nx4S-ITHELQ-t1080x1080.jpg" /></div>
   
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Oct 31, 2024 20:00:00").getTime();
+  <script>
+    var compteDesde = new Date("Jun 19, 2024 00:00:01").getTime();
+    var x = setInterval(function() {
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+      var avui = new Date().getTime();
+      var diferencia = avui - compteDesde;
+      var dies = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      var hores = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minuts = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+      var segons = Math.floor((diferencia % (1000 * 60)) / 1000);
+        
+      document.getElementById("tempo").innerHTML = dies + " dies " + hores + " hores "
+      + minuts + " minuts " + segons + " segons ";
 
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  document.getElementById("tempo").innerHTML = days + " dies " + hours + " hores "
-  + minutes + " minuts " + seconds + " segons ";
-
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("tempo").innerHTML = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-  }
-}, 1000);
-</script>
-  
+    }, 1000);
+  </script>
 </body>
 </html>
