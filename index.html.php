@@ -210,7 +210,7 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright sohaib.eu 2020 - 2023</span> 
+                    <span>© Copyright sohaib.eu 2020 - <?php echo date("Y");?></span> 
                     <span>|</span>
                     <span>With <i class="fa fa-heart" aria-hidden="true"></i> and <i class="fa fa-coffee" aria-hidden="true"></i> - <a href="https://www.sohaib.eu">sohaib.eu</a></span>	
                 </div>
