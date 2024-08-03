@@ -12,33 +12,28 @@ body {
   min-height: 100vh;
 }
 
-p {
-  text-align: center;
-  font-size: 2rem;
-  margin: 1rem;
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  padding: 1rem;
 }
 
-.image-container {
+.gallery-row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
-.image-container img {
-  max-width: 90%;
-  max-height: 80vh;
-  object-fit: contain;
+  flex-wrap: wrap;
+  gap: 1rem; /* Space between items */
 }
 
 .gallery-item {
-  margin-bottom: 30px;
+  flex: 1 1 calc(33.333% - 1rem); /* Adjust based on the number of columns */
+  margin-bottom: 1rem;
 }
 
-.gallery-item img {
+.gallery-img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 5px; /* Optional: rounded corners for images */
 }
 
 .footer {
