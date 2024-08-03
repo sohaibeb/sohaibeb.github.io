@@ -1,16 +1,62 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+<style>
+*{
+  background-color: #000;
+  color: #fff;
+}
+p {
+  text-align: center;
+  font-size: 35px;
+}
+div.shadow {
+    position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:30%;
+    left:50%;
+}
+img.capi {
+    position:relative;
+    max-width:512px;
+    margin-top:-30%;
+    margin-left:-50%;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40; /* Dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.footer a:hover {
+    background-color: white;
+    color: #343a40;
+}
+</style>
 </head>
   
 <body>
-  <p id="tempo"></p>
-
-  <div class="image-container">
-    <img id="imatgeSetmanal" src="" alt="Imatge Setmanal"/>
+  <div><p id="tempo"></p></div>
+  <div class="shadow">
+    <img id="imatgeSetmanal" class="capi"  src="" alt="Imatge Setmanal"/><br>
   </div>
 
   <script>
@@ -33,6 +79,7 @@
     ];
 
     var temporitzador = setInterval(function() {
+
       var avui = new Date().getTime();
       var diferencia = avui - compteDesde;
       var dies = Math.floor(diferencia / (1000 * 60 * 60 * 24));
@@ -40,8 +87,8 @@
       var minuts = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
       var segons = Math.floor((diferencia % (1000 * 60)) / 1000);
         
-      document.getElementById("tempo").innerHTML = 
-        `${dies} dies ${hores} hores ${minuts} minuts ${segons} segons `;
+      document.getElementById("tempo").innerHTML = dies + " dies " + hores + " hores "
+      + minuts + " minuts " + segons + " segons ";
 
       var setmanes = Math.floor(dies / 7);
 
@@ -50,6 +97,7 @@
       } else {
         document.getElementById("imatgeSetmanal").src = imatges[imatges.length - 1];
       }
+
     }, 1000);
   </script>
 </body>
