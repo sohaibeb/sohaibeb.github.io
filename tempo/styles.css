@@ -31,6 +31,16 @@ p {
   object-fit: contain;
 }
 
+.gallery-item {
+  margin-bottom: 30px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .footer {
   position: relative;
   background-color: #343a40;
