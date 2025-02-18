@@ -17,18 +17,37 @@
             margin-right: auto;
             max-width: 420px;
         }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
-<video id="autoplay-video" autoplay muted loop>
+<video id="autoplay-video" loop>
     <source src="src/limewire.mp4" type="video/mp4">
     404
 </video>
 
+<button id="play-button">Enable sound</button>
+
 <script>
+    let video = document.getElementById("autoplay-video");
+    let button = document.getElementById("play-button");
+
+    button.addEventListener("click", function() {
+        video.muted = false;  // Unmute the video
+        video.play();  // Play the video with sound
+        button.style.display = "none"; // Hide the button after playing
+    });
+
+    // Autoplay muted video on page load
     document.addEventListener("DOMContentLoaded", function() {
-        let video = document.getElementById("autoplay-video");
+        video.muted = true;  // Start muted (allowed by browsers)
         video.play().catch(error => console.log("Autoplay blocked:", error));
     });
 </script>
