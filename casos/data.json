@@ -1,0 +1,206 @@
+{
+  "name": "Robatori massiu (Ago-Set 2024)",
+  "type": "folder",
+  "children": [
+    {
+      "name": "Marroc",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Ouazzane",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Dades Nmira Phone",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "--------------------------------------------------------------------",
+                  "type": "file"
+                }, 
+                {
+                  "name": "Propietari: Brahim Nmira",
+                  "type": "file"
+                },
+                {
+                  "name": "Adreça: Ain Abi Faris, Mohammed V Street, 50030, Ouazzane - (mapa)",
+                  "type": "url",
+                  "url": "https://maps.app.goo.gl/N8MiFRvSam971ZJ19"
+                },
+                {
+                  "name": "Telèfon: (+212) 0661267605, 0666879460 (Whatsapp/Telegram)",
+                  "type": "file"
+                },
+                {
+                  "name": "Correu: brahim-nmi@hotmail.com, brahimnmira1@gmail.com",
+                  "type": "file"
+                },
+                {
+                  "name": "XXSS: FB/IG/YT @nmiraphone",
+                  "type": "file"
+                },
+                {
+                  "name": "--------------------------------------------------------------------",
+                  "type": "file"
+                }              ]
+            },
+            {
+              "name": "Equips informàtics",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "Localitats: 20 unitats Lenovo 300e (alumnat)",
+                  "type": "url",
+                  "url": "https://projectes.xtec.cat/digital/equipaments-i-infraestructures/ordinadors/ordinadors-alumnat/"
+                },
+                {
+                  "name": "Localitats: 12 unitats Lenovo Thinkbook (docents)",
+                  "type": "url",
+                  "url": "https://projectes.xtec.cat/digital/equipaments-i-infraestructures/ordinadors/ordinadors-docents/"
+                },
+                {
+                  "name": "Identificats: 6 unitats Lenovo 300e/300w (alumnat)",
+                  "type": "file"
+                },
+                {
+                  "name": "GC: 00966941",
+                  "type": "file"
+                },
+                {
+                  "name": "GC: 00966789",
+                  "type": "file"
+                },
+                {
+                  "name": "GC: 00957254",
+                  "type": "file"
+                },
+                {
+                  "name": "GC: 00967583",
+                  "type": "file"
+                },
+                {
+                  "name": "GC: 00957444",
+                  "type": "file"
+                },
+                {
+                  "name": "GC: 00966656",
+                  "type": "file"
+                },
+                {
+                  "name": "Identificats: 8 unitats Lenovo Thinkbook (docents)",
+                  "type": "file"
+                },
+                {
+                  "name": "254010713780",
+                  "type": "file"
+                },
+                {
+                  "name": "254010716587",
+                  "type": "file"
+                },
+                {
+                  "name": "254010713005",
+                  "type": "file"
+                },
+                {
+                  "name": "254010713074",
+                  "type": "file"
+                },
+                {
+                  "name": "253901207478",
+                  "type": "file"
+                },
+                {
+                  "name": "254010717955",
+                  "type": "file"
+                },
+                {
+                  "name": "254010712949",
+                  "type": "file"
+                },
+                {
+                  "name": "254010(68)2204",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tanger",
+          "type": "folder",
+          "children": [ 
+                {
+              "name": "Dades az7tech.ma",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "--------------------------------------------------------------------",
+                  "type": "file"
+                },
+                {
+                  "name": "Fundador: Anass Bouesetta",
+                  "type": "file"
+                },
+                {
+                  "name": "Adreça: Casabarata, local 512, 90060 Tanger - (mapa)",
+                  "type": "url",
+                  "url": "https://maps.app.goo.gl/xuCyHPiqFpqhDQTe8"
+                },
+                {
+                  "name": "Telèfon: (+212) 0770964613, 0649751668 (Whatsapp/Telegram)",
+                  "type": "file"
+                },
+                {
+                  "name": "XXSS: FB/IG @anass.bousstta.90/@anassbousetta",
+                  "type": "file"
+                },
+                {
+                  "name": "Correu: boussttaanass@gmail.com",
+                  "type": "file"
+                }, 
+            {
+              "name": "--------------------------------------------------------------------",
+              "type": "file"
+            },
+            {
+                  "name": "Trebalaldor/soci: Haitam Hiria",
+                  "type": "file"
+                },
+                {
+                  "name": "Adreça: Desconeguda - Tanger",
+                  "type": "file"
+                },
+                {
+                  "name": "Telèfon: (+212) 0661646092 (Whatsapp/Telegram)",
+                  "type": "file"
+                },
+                {
+                  "name": "XXSS: FB/IG @hiria42/@haaaiitam",
+                  "type": "file"
+                },
+                {
+                  "name": "Linkedin: haitam-hiria-896490296",
+                  "type": "url",
+                  "url": "https://ma.linkedin.com/in/haitam-hiria-896490296"
+                }                
+              ]
+            },
+            {
+              "name": "Equips informàtics",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "Localitzats: 1 unitat Lenovo 300e (alumnat)",
+                  "type": "url",
+                  "url": "https://projectes.xtec.cat/digital/equipaments-i-infraestructures/ordinadors/ordinadors-alumnat/"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
