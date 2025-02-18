@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  font-family: 'IBM Plex Mono', monospace !important; 
+}
+
+h3, p{
+  text-align: justify;
+}
+
+footer{
+  text-align: center !important;
+}
+
+footer a{
+  text-decoration: none !important;
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+}
+
+span{
+  color:red;
+}
+
+.navbar {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 12px;
+  fill: rgb(0, 0, 0);
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+pre {
+  background-color: #f4f4f4;
+}
+
+pre::-webkit-scrollbar {
+  width: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: #212529; 
+}
+
+pre::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+.equips{
+  width: 120px;
+  height: auto;
+}
