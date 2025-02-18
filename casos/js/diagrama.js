@@ -1,4 +1,4 @@
-var margin = [20, 120, 20, 230], 
+var margin = [20, 120, 220, 230], 
     width = 1440 - margin[1] - margin[3],
     height = 800 - margin[0] - margin[2],
     i = 0,
