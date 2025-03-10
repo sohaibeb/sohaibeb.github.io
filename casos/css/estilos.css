@@ -16,7 +16,7 @@ footer a{
   text-decoration: none !important;
 }
 
-footer img{
+footer img {
   width: 50px;
   height: auto;
 }
@@ -29,8 +29,93 @@ span i{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.index-list li, a {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.index-list a {
+  text-decoration: none;
+}
+
+.en-curs {
+  position: relative;
+  white-space: pre;
+  &:after {
+    background: black;
+    border-radius: 0.1em;
+    box-shadow: 0 0 1px rgba(0,0,0,0.35);
+    content: " ";
+    width: 100%;
+    height: 1.2em;
+    left: 0;
+    position: absolute;
+    transform: skewY(-5deg) rotate(5deg);
+  }
+}
+
 .node {
   cursor: pointer;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-container.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-container.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-container.left::after {
+  right: -6px;
+}
+
+.timeline-container.right::after {
+  left: -6px;
+}
+
+.timeline-content {
+  padding: 15px;
+  background: #f8f9fa;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-container {
+      width: 100%;
+      text-align: center;
+  }
+  .timeline-container.right {
+      left: 0;
+  }
 }
 
 .node circle {
@@ -69,7 +154,7 @@ path.link {
   stroke-width: 1px;
 }
 
-pre {
+pre.diagram {
   background-color: #f4f4f4;
 }
 
