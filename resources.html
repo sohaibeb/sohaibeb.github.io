@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de Recursos OSINT</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #111111;
+      color: #757575;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .category {
+      margin-bottom: 2rem;
+    }
+
+    .category h5 {
+      color: white;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .site-logo {
+      max-width: 8rem;
+    }
+
+    .site-title {
+      font-size: 1.8rem;
+    }
+
+    .site-title span.sohaib {
+      color: white;
+    }
+
+    .site-title span.eu {
+      color: #ffcc00;
+    }
+
+    /* Icono proporcional */
+    li img.icon {
+      max-height: 1em;
+      width: auto;
+      vertical-align: middle;
+      margin-right: 0.5em;
+    }
+
+    li img.light {
+      filter: brightness(0) invert(1);
+    }
+
+    footer {
+      border-top: 1px solid #444;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      padding-top: 3rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #757575;
+    }
+
+    .copyright span {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    nav.category-nav {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    nav.category-nav a {
+      color: #ffcc00;
+      margin: 0 0.7rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav.category-nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-4">
+    <div class="site-header">
+      <img src="https://sohaib.eu/images/logo.eu.png" class="site-logo" alt="Sohaib.eu" onerror="this.style.display='none'; document.getElementById('fallback-title').style.display='block';">
+      <div id="fallback-title" class="site-title" style="display: none;">
+        <span class="sohaib">Sohaib</span><span class="eu">.eu</span>
+      </div>
+    </div>
+
+    <nav class="category-nav">
+      <a href="./">Back to Home</a>
+
+      <a href="#Telegram">Telegram</a>
+      <a href="#DarkWeb">Dark Web</a>
+      <a href="#WebsiteRecon">Website Recon</a>
+      <a href="#UsernameSearch">Username Search</a>
+      <a href="#YouTube">YouTube</a>
+      <a href="#TikTok">TikTok</a>
+      <a href="#Twitter">Twitter</a>
+      <a href="#Instagram">Instagram</a>
+      <a href="#Facebook">Facebook</a>
+      <a href="#Reddit">Reddit</a>
+      <a href="#ImageSearch">Image Search</a>
+      <a href="#EmailCheck">Email Check</a>
+      <a href="#GeneralOSINT">General OSINT</a>
+      <a href="#Other">Other</a>
+    </nav>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <div class="col category" id="Telegram">
+        <h5>Telegram</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/bellingcat/telegram-phone-number-checker"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Telegram Phone Checker – Verify Telegram registration by phone</a></li>
+          <li><a href="https://github.com/proseltd/Telepathy-Community"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Telepathy – Research tool for public Telegram channels</a></li>
+          <li><a href="https://github.com/tejado/telegram-nearby-map"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Telegram Nearby Map – Map Telegram users by location</a></li>
+          <li><a href="https://github.com/TelegramDB/TelegramDB"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">TelegramDB – Searchable Telegram user database</a></li>
+          <li><a href="https://github.com/The-Osint-Toolbox/Telegram-OSINT"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Telegram OSINT – Tools to extract Telegram group info</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="DarkWeb">
+        <h5>Dark Web</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/apurvsinghgautam/dark-web-osint-tools"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Dark Web OSINT – Curated list of dark web tools</a></li>
+          <li><a href="https://github.com/megadose/OnionSearch"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">OnionSearch – Search engine for Tor services</a></li>
+          <li><a href="https://github.com/fastfire/deepdarkCTI"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">DeepDarkCTI – Dark web intelligence and monitoring</a></li>
+          <li><a href="https://github.com/Alfredredbird/tookie-osint"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Tookie OSINT – Toolkit for investigating .onion domains</a></li>
+          <li><a href="https://github.com/C3n7ral051nt4g3ncy/Masto"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Masto – Tool to analyze Mastodon & Fediverse activity</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="WebsiteRecon">
+        <h5>Website Recon</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/christophetd/CloudFlair"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">CloudFlair – Discover origin IPs of Cloudflare sites</a></li>
+          <li><a href="https://github.com/pielco11/fav-up"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Fav-Up – Favicon hash reverse search</a></li>
+          <li><a href="https://github.com/zidansec/CloudPeler"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">CloudPeler – Bypass Cloudflare protections</a></li>
+          <li><a href="https://github.com/Lissy93/web-check"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Web-Check – Website status, security and meta-data tool</a></li>
+          <li><a href="https://github.com/projectdiscovery/subfinder"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Subfinder – Subdomain discovery tool</a></li>
+          <li><a href="https://github.com/s0md3v/Photon"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Photon – Web crawler for OSINT footprinting</a></li>
+          <li><a href="https://github.com/utkusen/urlhunter"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">urlhunter – Detect phishing and credential leaks</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="UsernameSearch">
+        <h5>Username Search</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/mxrch/GHunt"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">GHunt – OSINT tool for Google accounts</a></li>
+          <li><a href="https://github.com/soxoj/maigret"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Maigret – Collect a digital footprint from usernames</a></li>
+          <li><a href="https://github.com/sherlock-project/sherlock"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Sherlock – Hunt usernames across many platforms</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="YouTube">
+        <h5>YouTube</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/seintpl/ytxtractor"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">ytxtractor – Extract metadata from YouTube channels</a></li>
+          <li><a href="https://github.com/yt-dlp/yt-dlp"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">yt-dlp – Advanced YouTube video downloader</a></li>
+          <li><a href="https://github.com/ytdl-org/youtube-dl"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">youtube-dl – Original command-line downloader</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="TikTok">
+        <h5>TikTok</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/bellingcat/tiktok-hashtag-analysis"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">TikTok Hashtag Analysis – Analyze popular hashtags</a></li>
+          <li><a href="https://github.com/bellingcat/tiktok-timestamp"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">TikTok Timestamp – Time-based content analysis</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="Twitter">
+        <h5>Twitter</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/igorbrigadir/twitter-advanced-search"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Advanced Twitter Search – Advanced search interface for Twitter</a></li>
+          <li><a href="https://github.com/bellingcat/twitter-geocode-searches"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Twitter Geocode Search – Geo-filtered tweet searches</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="Instagram">
+        <h5>Instagram</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/bellingcat/instagram-location-search"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Instagram Location Search – Discover posts by location</a></li>
+          <li><a href="https://github.com/instaloader/instaloader"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Instaloader – Download Instagram profiles and data</a></li>
+          <li><a href="https://github.com/Datalux/Osintgram"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Osintgram – Instagram OSINT automation tool</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="Facebook">
+        <h5>Facebook</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/bellingcat/facebook-downloader"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Facebook Downloader – Save Facebook posts & videos</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="Reddit">
+        <h5>Reddit</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/bellingcat/reddit-post-scraping-tool"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Reddit Scraper – Extract Reddit post & user data</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="ImageSearch">
+        <h5>Image Search</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/dessant/search-by-image"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Search by Image – Browser extension for reverse image search</a></li>
+          <li><a href="https://github.com/franckferman/MetaDetective"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">MetaDetective – Extract metadata from image files</a></li>
+          <li><a href="https://github.com/seintpl/imagstodon"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Imagstodon – Reverse image search for Mastodon</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="EmailCheck">
+        <h5>Email Check</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/alpkeskin/mosint"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Mosint – Email address OSINT gathering tool</a></li>
+          <li><a href="https://github.com/megadose/holehe"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Holehe – Check if email is linked to online services</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="GeneralOSINT">
+        <h5>General OSINT</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/1N3/Sn1per"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Sn1per – Automated pentest and reconnaissance tool</a></li>
+          <li><a href="https://github.com/AnonCatalyst/Ominis-OSINT"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Ominis OSINT – Modular intelligence toolkit</a></li>
+          <li><a href="https://github.com/daprofiler/DaProfiler"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">DaProfiler – Profile people using OSINT techniques</a></li>
+          <li><a href="https://github.com/HowToFind-bot/osint-tools"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">OSINT Tools – Curated OSINT toolkits list</a></li>
+          <li><a href="https://github.com/Lucksi/Mr.Holmes"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Mr.Holmes – Multifunctional OSINT research assistant</a></li>
+          <li><a href="https://github.com/seekr-osint/seekr"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Seekr – OSINT automation and target profiling</a></li>
+          <li><a href="https://github.com/0x0be/yesitsme"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">yesitsme – Validate if a username matches a target</a></li>
+        </ul>
+      </div>
+
+      <div class="col category" id="Other">
+        <h5>Other</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/OhShINT/ohshint.gitbook.io/tree/main/Lists_of_OSINT_Web_Resources"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">OhShint Lists – Curated list of OSINT resources</a></li>
+          <li><a href="https://github.com/bellingcat/auto-archiver"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Auto Archiver – Archive URLs with multiple services</a></li>
+          <li><a href="https://github.com/bellingcat/vk-url-scraper"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">VK URL Scraper – Extract user info from VK links</a></li>
+          <li><a href="https://github.com/bellingcat/wayback-google-analytics"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Wayback GA – Map GA codes in Wayback snapshots</a></li>
+          <li><a href="https://github.com/seintpl/AmIReal"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">AmIReal – Analyze if an account is fake or real</a></li>
+          <li><a href="https://github.com/N0rz3/Eyes"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Eyes – Data aggregation from multiple sources</a></li>
+          <li><a href="https://github.com/N0rz3/Zehef"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Zehef – Framework for target investigation</a></li>
+          <li><a href="https://github.com/RevoltSecurities/ShodanX"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">ShodanX – Shodan enhanced search & automation</a></li>
+          <li><a href="https://github.com/ibnaleem/gosearch"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Gosearch – Powerful CLI OSINT toolkit</a></li>
+          <li><a href="https://github.com/ravens/awesome-telco"><img class="icon light" src="https://f.start.me/github.com" alt="" loading="lazy">Awesome Telco – Collection of telecom OSINT tools</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      <span>© Copyright sohaib.eu 2020 - <span id="current-year">2025</span></span>
+      <span>Contact: <a href="#">info[at]cybersec.sohaib[dot]eu</a></span>  
+      <span>With <i class="fa fa-code"></i> and <i class="fa fa-coffee"></i> - <a href="https://www.sohaib.eu">sohaib.eu</a> - <i class="fa fa-globe"></i> Barcelona</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").innerText = new Date().getFullYear();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
