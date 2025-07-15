@@ -1,0 +1,48 @@
+        .media {
+            display: grid;
+            place-content: center;
+        }
+
+        .marquee {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+
+        .marquee__ctn {
+            display: flex;
+            width: 100%;
+        }
+
+        .marquee__track {
+            display: flex;
+            animation: scrollMarquee 40s linear infinite;
+        }
+
+        .marquee__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            width: 120px;
+            margin-inline-end: 3rem;
+        }
+
+        .marquee__item img {
+            width: 100%;
+            object-fit: contain;
+            backface-visibility: hidden;
+            filter: brightness(0) invert(1);
+        }
+
+        @keyframes scrollMarquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .marquee__track:hover {
+            animation-play-state: paused;
+        }

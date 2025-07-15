@@ -1,0 +1,90 @@
+  body {
+      background-color: #111111;
+      color: #757575;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .category {
+      margin-bottom: 2rem;
+    }
+
+    .category h5 {
+      color: white;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .site-logo {
+      max-width: 8rem;
+    }
+
+    .site-title {
+      font-size: 1.8rem;
+    }
+
+    .site-title span.sohaib {
+      color: white;
+    }
+
+    .site-title span.eu {
+      color: #ffcc00;
+    }
+
+    /* Icono proporcional */
+    li img.icon {
+      max-height: 1em;
+      width: auto;
+      vertical-align: middle;
+      margin-right: 0.5em;
+    }
+
+    li img.light {
+      filter: brightness(0) invert(1);
+    }
+
+    footer {
+      border-top: 1px solid #444;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      padding-top: 3rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #757575;
+    }
+
+    .copyright span {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    nav.category-nav {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    nav.category-nav a {
+      color: #ffcc00;
+      margin: 0 0.7rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav.category-nav a:hover {
+      text-decoration: underline;
+    }
