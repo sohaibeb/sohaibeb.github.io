@@ -16,7 +16,7 @@
 
 .marquee__ctn {
     display: flex;
-    animation: marquee-scroll 30s linear infinite;
+    animation: marquee-scroll 10s linear infinite;
     will-change: transform;
 }
 
