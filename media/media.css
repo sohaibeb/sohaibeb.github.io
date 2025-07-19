@@ -78,10 +78,6 @@
     .marquee__item img {
         height: 30px;
     }
-
-    .marquee__ctn {
-        animation-duration: 45s;
-    }
 }
 
 @media (max-width: 480px) {
@@ -91,9 +87,5 @@
 
     .marquee__item img {
         height: 24px;
-    }
-
-    .marquee__ctn {
-        animation-duration: 60s;
     }
 }
