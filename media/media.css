@@ -1,48 +1,31 @@
 .media {
-  position: relative;
   width: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
-  z-index: 0;
 }
 
 .marquee {
   position: relative;
-  overflow: hidden;
   width: 100%;
   max-width: 1200px;
-}
-
-.marquee__ctn {
-  display: flex;
-  width: 100%;
   overflow: hidden;
 }
 
 .marquee__track {
   display: flex;
-  flex-wrap: nowrap;
   gap: 2rem;
-  width: max-content;
   will-change: transform;
 }
 
 .marquee__item {
   flex: 0 0 auto;
-  pointer-events: auto;
 }
 
 .marquee__item img {
   height: 40px;
   object-fit: contain;
-  display: block;
   filter: brightness(0) invert(1);
-  backface-visibility: hidden;
-}
-
-.marquee:hover {
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
