@@ -1,36 +1,31 @@
-const track = document.getElementById('marquee-track');
 const marquee = document.getElementById('marquee');
+const track = document.getElementById('marquee-track');
 
-const items = [...track.children];
-items.forEach(item => {
-  const clone = item.cloneNode(true);
-  track.appendChild(clone);
-});
+const cloneTrack = () => {
+  const trackWidth = track.scrollWidth;
+  const containerWidth = marquee.offsetWidth;
+
+  while (track.scrollWidth < containerWidth * 2) {
+    const clone = track.cloneNode(true);
+    clone.querySelectorAll('a').forEach(a => a.setAttribute('tabindex', '-1'));
+    track.append(...clone.children);
+  }
+};
+
+cloneTrack();
 
 let offset = 0;
-let lastTimestamp: number | null = null;
-const speed = 50;
+const speed = 0.5; //<-- 
 let isPaused = false;
 
-function animate(timestamp: number) {
-  if (!lastTimestamp) lastTimestamp = timestamp;
-  const delta = timestamp - lastTimestamp;
-  lastTimestamp = timestamp;
-
+function animate() {
   if (!isPaused) {
-    offset -= (speed * delta) / 1000;
-
-    const firstItemWidth =
-      items[0].offsetWidth + parseFloat(getComputedStyle(track).gap || '0');
-    const totalWidth = firstItemWidth * items.length;
-
-    if (Math.abs(offset) >= totalWidth) {
-      offset += totalWidth;
+    offset -= speed;
+    if (Math.abs(offset) >= track.scrollWidth / 2) {
+      offset = 0;
     }
-
     track.style.transform = `translateX(${offset}px)`;
   }
-
   requestAnimationFrame(animate);
 }
 
