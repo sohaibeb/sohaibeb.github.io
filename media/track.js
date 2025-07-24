@@ -1,25 +1,37 @@
 const track = document.getElementById('marquee-track');
 const marquee = document.getElementById('marquee');
 
-const clone = track.cloneNode(true);
-track.parentElement.appendChild(clone);
+const items = [...track.children];
+items.forEach(item => {
+  const clone = item.cloneNode(true);
+  track.appendChild(clone);
+});
 
 let offset = 0;
-const speed = 0.5;
+let lastTimestamp: number | null = null;
+const speed = 50;
 let isPaused = false;
 
-function animate() {
-    if (!isPaused) {
-        offset -= speed;
+function animate(timestamp: number) {
+  if (!lastTimestamp) lastTimestamp = timestamp;
+  const delta = timestamp - lastTimestamp;
+  lastTimestamp = timestamp;
 
-        if (offset <= -track.offsetWidth) {
-            offset = 0;
-        }
+  if (!isPaused) {
+    offset -= (speed * delta) / 1000;
 
-        track.style.transform = `translateX(${offset}px)`;
-        clone.style.transform = `translateX(${offset + track.offsetWidth}px)`;
+    const firstItemWidth =
+      items[0].offsetWidth + parseFloat(getComputedStyle(track).gap || '0');
+    const totalWidth = firstItemWidth * items.length;
+
+    if (Math.abs(offset) >= totalWidth) {
+      offset += totalWidth;
     }
-    requestAnimationFrame(animate);
+
+    track.style.transform = `translateX(${offset}px)`;
+  }
+
+  requestAnimationFrame(animate);
 }
 
 marquee.addEventListener('mouseenter', () => (isPaused = true));
