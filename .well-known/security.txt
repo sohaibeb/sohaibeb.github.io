@@ -1,0 +1,6 @@
+# welcome to security.txt
+
+Contact: mailto:info@cybersec.sohaib.eu
+Expires: 2030-10-12T00:00
+Preferred-Languages: en, es
+Canonical: https://sohaib.eu/.well-known/security.txt
