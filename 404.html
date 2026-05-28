@@ -1,2 +1,67 @@
-<h1>Status - 404</h1>
-<h3>Back to <a href="https://sohaib.eu">Homepage</a></h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 · Page not found</title>
+    
+    <link rel="stylesheet" href="/css/vendor.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/resources.css">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">sohaibeb</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/resources">Resources</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container" style="text-align: center; padding: 4rem 1rem;">
+            <div class="error-icon" aria-hidden="true">
+                <svg width="110" height="80" viewBox="0 0 110 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 55 C18 55 12 47 15 37 C10 28 15 18 26 18 C27 10 38 6 48 10 C56 4 70 6 74 16 C84 16 92 24 88 34 C94 39 92 50 84 54 C79 56 74 56 68 55 L30 55Z" stroke="#ffcc00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(255,204,0,0.05)"/>
+                    <path d="M48 42 L62 42" stroke="#ffcc00" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="40" cy="46" r="2.5" fill="#ffcc00" fill-opacity="0.8"/>
+                    <circle cx="68" cy="46" r="2.5" fill="#ffcc00" fill-opacity="0.8"/>
+                </svg>
+            </div>
+
+            <h1 class="error-code" style="font-size: 8rem; font-weight: 900; margin: 0.5rem 0;">404</h1>
+            <h2 class="error-title" style="font-size: 2rem; margin-bottom: 1rem;">Page not found</h2>
+            
+            <p class="error-message" style="max-width: 600px; margin: 0 auto 2rem auto; opacity: 0.8;">
+                The page you are looking for might have been removed, had its name changed,<br>
+                or is temporarily unavailable.
+            </p>
+
+            <div class="action-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/" class="btn btn-primary" style="background: #ffcc00; color: #111; padding: 0.8rem 2rem; border-radius: 40px; text-decoration: none; font-weight: 600;">← Back to homepage</a>
+                <button onclick="window.location.reload();" class="btn btn-secondary" style="background: transparent; border: 2px solid #ffcc00; color: #ffcc00; padding: 0.8rem 2rem; border-radius: 40px; cursor: pointer; font-weight: 600;">⟳ Try again</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+ <div class="row footer-bottom">
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright sohaib.eu 2020 - <span id="current-year"></span></span>
+                    <span>Contact: <a href="#">info[at]cybersec.sohaib[dot]eu</a></span>
+                    <span>With <i class="fa fa-code"></i> and <i class="fa fa-coffee"></i> - <a href="https://www.sohaib.eu">sohaib.eu</a> - <i class="fa fa-globe"></i> Barcelona</span>
+                </div>
+    </footer>
+</body>
+</html>
